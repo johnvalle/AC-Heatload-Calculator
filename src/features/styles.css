@@ -1,0 +1,15 @@
+.door {
+  right: 1.5rem;
+  bottom: 0.5rem;
+  height: 1rem;
+  width: 2.5rem;
+  border: 1px solid black;
+}
+
+.door::after {
+  content: "";
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  border: 1px solid black;
+}
