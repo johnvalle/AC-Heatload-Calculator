@@ -8,10 +8,10 @@ export const Home = () => {
     <BaseLayout>
       <Container size="xl">
         <Grid>
-          <Grid.Col span={4}>
+          <Grid.Col span={5}>
             <Calculator />
           </Grid.Col>
-          <Grid.Col span={8}>
+          <Grid.Col span={7}>
             <p>Result</p>
           </Grid.Col>
         </Grid>
