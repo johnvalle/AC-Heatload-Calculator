@@ -1,3 +1,4 @@
+import { MantineProvider } from '@mantine/core';
 import React from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 
@@ -9,8 +10,10 @@ type AppProviderProps = {
 
 export const AppProvider = ({ children }: AppProviderProps) => {
   return (
-    <React.Suspense fallback={<p>Loading...</p>}>
-      <ErrorBoundary FallbackComponent={ErrorFallback}>{children}</ErrorBoundary>
-    </React.Suspense>
+    <MantineProvider>
+      <React.Suspense fallback={<p>Loading...</p>}>
+        <ErrorBoundary FallbackComponent={ErrorFallback}>{children}</ErrorBoundary>
+      </React.Suspense>
+    </MantineProvider>
   );
 };

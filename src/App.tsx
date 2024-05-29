@@ -1,12 +1,14 @@
-import * as Feat from '@/features';
+import '@mantine/core/styles.css';
+
 import { AppProvider } from '@/providers/AppProvider';
+import { Home } from '@/routes/Home';
 
 import './App.css';
 
 function App() {
   return (
     <AppProvider>
-      <Feat.Home />
+      <Home />
     </AppProvider>
   );
 }
